@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "variables";
-@import "bootstrap/scss/bootstrap";
+@import "../_sass/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 .content {
   font-size: $custom-font-size;
