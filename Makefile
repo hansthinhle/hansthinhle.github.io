@@ -1,10 +1,9 @@
 SHELL := /bin/bash
-BUNDLE := bundle
 YARN := yarn
 VENDOR_DIR = assets/vendor/
-JEKYLL := $(BUNDLE) exec jekyll
+JEKYLL := jekyll
 
-PROJECT_DEPS := Gemfile package.json
+PROJECT_DEPS := package.json
 
 .PHONY: all clean install update
 
@@ -19,11 +18,9 @@ check:
 		_site
 
 install: $(PROJECT_DEPS)
-	$(BUNDLE) install --path vendor/bundler
 	$(YARN) install
 
 update: $(PROJECT_DEPS)
-	$(BUNDLE) update
 	$(YARN) upgrade
 
 include-yarn-deps:
