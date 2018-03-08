@@ -4,3 +4,5 @@ sass:
         - node_modules
 
 exclude: []
+
+theme: jekyll-theme-cayman
